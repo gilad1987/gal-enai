@@ -3,11 +3,18 @@ import SearchResult from "./SearchResult";
 import styled from "styled-components";
 
 const SearchResultsStyled = styled.section`
- p.title{
+ p.title {
+span:first-child{
 font-size: 26px;
     text-decoration: underline;
         color: #0a92d0;
     font-weight: bold;
+}
+    span:nth-child(2){
+    text-decoration: none;
+    font-size: 14px;
+    color:black;
+    }
 }
 
 
@@ -28,7 +35,7 @@ export default function SearchResults({items,query,title}: any): React.ReactElem
         query={query}/>));
     return (
         <SearchResultsStyled>
-            <p className={'title'}>{title}:</p>
+            <p className={'title'}><span>{title}:</span> <span >({items.length} תוצאות )</span></p>
             {results}
         </SearchResultsStyled>
     )
