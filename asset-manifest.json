@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/malchuty/static/css/main.0bc223bf.chunk.css",
-    "main.js": "/malchuty/static/js/main.906e23a8.chunk.js",
-    "main.js.map": "/malchuty/static/js/main.906e23a8.chunk.js.map",
-    "runtime~main.js": "/malchuty/static/js/runtime~main.9af07f59.js",
-    "runtime~main.js.map": "/malchuty/static/js/runtime~main.9af07f59.js.map",
-    "static/js/2.4fd40a5d.chunk.js": "/malchuty/static/js/2.4fd40a5d.chunk.js",
-    "static/js/2.4fd40a5d.chunk.js.map": "/malchuty/static/js/2.4fd40a5d.chunk.js.map",
-    "index.html": "/malchuty/index.html",
-    "precache-manifest.141c60a93181b06452716831625eccab.js": "/malchuty/precache-manifest.141c60a93181b06452716831625eccab.js",
-    "service-worker.js": "/malchuty/service-worker.js",
-    "static/css/main.0bc223bf.chunk.css.map": "/malchuty/static/css/main.0bc223bf.chunk.css.map"
+    "main.css": "/gal-enai/static/css/main.0bc223bf.chunk.css",
+    "main.js": "/gal-enai/static/js/main.ea789b75.chunk.js",
+    "main.js.map": "/gal-enai/static/js/main.ea789b75.chunk.js.map",
+    "runtime~main.js": "/gal-enai/static/js/runtime~main.3d8b7d83.js",
+    "runtime~main.js.map": "/gal-enai/static/js/runtime~main.3d8b7d83.js.map",
+    "static/js/2.f150b532.chunk.js": "/gal-enai/static/js/2.f150b532.chunk.js",
+    "static/js/2.f150b532.chunk.js.map": "/gal-enai/static/js/2.f150b532.chunk.js.map",
+    "index.html": "/gal-enai/index.html",
+    "precache-manifest.63b7f423b1e5e29d11f7b5ad7d93de6d.js": "/gal-enai/precache-manifest.63b7f423b1e5e29d11f7b5ad7d93de6d.js",
+    "service-worker.js": "/gal-enai/service-worker.js",
+    "static/css/main.0bc223bf.chunk.css.map": "/gal-enai/static/css/main.0bc223bf.chunk.css.map"
   }
 }
