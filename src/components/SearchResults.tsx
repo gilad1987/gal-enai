@@ -35,7 +35,7 @@ export default function SearchResults({items,query,title}: any): React.ReactElem
         query={query}/>));
     return (
         <SearchResultsStyled>
-            <p className={'title'}><span>{title}:</span> <span >({items.length} תוצאות )</span></p>
+            <p className={'title'}><span>{title}:</span> <span >({items.length} תוצאות)</span></p>
             {results}
         </SearchResultsStyled>
     )
