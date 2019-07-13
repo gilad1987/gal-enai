@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b4e326bd19bbcbaab902a5940f6c692",
+    "revision": "45d230036265d0b27d1970da7bc3b627",
     "url": "/gal-enai/index.html"
   },
   {
-    "revision": "a76e3a2d0c6406287e33",
+    "revision": "05967ab88935585f94b0",
     "url": "/gal-enai/static/css/main.0bc223bf.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gal-enai/static/js/2.b5acb9b7.chunk.js"
   },
   {
-    "revision": "a76e3a2d0c6406287e33",
-    "url": "/gal-enai/static/js/main.48a7378e.chunk.js"
+    "revision": "05967ab88935585f94b0",
+    "url": "/gal-enai/static/js/main.142bdb61.chunk.js"
   },
   {
     "revision": "e4faa511982c9d8b2e99",
