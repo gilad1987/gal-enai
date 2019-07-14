@@ -40,7 +40,7 @@ function SearchResult({item, query}: any): React.ReactElement<any, string | Reac
         <>
             <h3>{item.doc_id}</h3>
             <p>{getHighlightedText(item.text, query)}</p>
-            <Button variant="outlined" onClick={handleClickOpen}>
+            <Button color="primary"  onClick={handleClickOpen}>
                 הצג מקור מלא
             </Button>
 
