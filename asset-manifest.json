@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gal-enai/static/css/main.0bc223bf.chunk.css",
-    "main.js": "/gal-enai/static/js/main.8817cd2b.chunk.js",
-    "main.js.map": "/gal-enai/static/js/main.8817cd2b.chunk.js.map",
+    "main.js": "/gal-enai/static/js/main.142bdb61.chunk.js",
+    "main.js.map": "/gal-enai/static/js/main.142bdb61.chunk.js.map",
     "runtime~main.js": "/gal-enai/static/js/runtime~main.969fbd6b.js",
     "runtime~main.js.map": "/gal-enai/static/js/runtime~main.969fbd6b.js.map",
     "static/js/2.b5acb9b7.chunk.js": "/gal-enai/static/js/2.b5acb9b7.chunk.js",
     "static/js/2.b5acb9b7.chunk.js.map": "/gal-enai/static/js/2.b5acb9b7.chunk.js.map",
     "index.html": "/gal-enai/index.html",
-    "precache-manifest.19779b3ac52a5774c151618d7eaf9bec.js": "/gal-enai/precache-manifest.19779b3ac52a5774c151618d7eaf9bec.js",
+    "precache-manifest.3abf9ba1ae9bcfc8efa5a9e8edbdb48a.js": "/gal-enai/precache-manifest.3abf9ba1ae9bcfc8efa5a9e8edbdb48a.js",
     "service-worker.js": "/gal-enai/service-worker.js",
     "static/css/main.0bc223bf.chunk.css.map": "/gal-enai/static/css/main.0bc223bf.chunk.css.map"
   }
