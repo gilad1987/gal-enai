@@ -12,7 +12,7 @@ class Api {
 
             return data;
         } catch (e) {
-            console.warn('Error: api.search()', e);
+            //console.warn('Error: api.search()', e);
         }
     }
 
@@ -27,7 +27,22 @@ class Api {
 
             return data;
         } catch (e) {
-            console.warn('Error: api.getResultContent()', e);
+            //console.warn('Error: api.getResultContent()', e);
+        }
+    }
+
+    async getTree(){
+        try {
+
+            const {data} = await axios.get(`http://videos.jewishnature.co.il/ApI/Json/TreeStructure/`, {
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+                }
+            });
+
+            return data;
+        } catch (e) {
+            //console.warn('Error: api.getResultContent()', e);
         }
     }
 }

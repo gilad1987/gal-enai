@@ -9,13 +9,16 @@ import {jssPreset, StylesProvider, ThemeProvider} from "@material-ui/styles";
 import {create} from 'jss';
 import rtl from "jss-rtl";
 import {createMuiTheme} from "@material-ui/core";
-import SearchStore from "./stores/SearchStore";
+import SearchsStore from "./stores/SearchStore";
+import TreesStore from "./stores/TreesStore";
 
 const api = new Api();
-const searchStore = new SearchStore();
+const searchStore = new SearchsStore(api);
+const treesStore = new TreesStore(api);
 const stores = {
     api,
     searchStore,
+    treesStore,
 };
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 const theme = createMuiTheme({

@@ -1,12 +1,31 @@
 import React from "react";
 import {inject} from "mobx-react";
+import styled from "styled-components";
+import Tree from "./Tree";
 
-function SearchResultContent({id,api}:any){
+const Flex = styled.div`
+display: flex;
+justify-content: center;
+div.answer{
+flex:1
+}
+ul{
+padding-left: 20px;
+}
+.current{color: #fb1c35; font-weight: bold}
+`;
+
+
+function SearchResultContent({id, api, treesStore}: any) {
 
     const [html, setHtml] = React.useState('');
+    const [loading, setLoading] = React.useState(true);
 
-    api.getResultContent(id).then((response:any)=>{
+    const tree = treesStore.findBranch('data', id);
+
+    api.getResultContent(id).then((response: any) => {
         setHtml(response);
+        setLoading(false);
     });
 
     function createMarkup() {
@@ -14,8 +33,12 @@ function SearchResultContent({id,api}:any){
     }
 
     return (
-        <div dangerouslySetInnerHTML={createMarkup()} />
+        <Flex>
+            {tree && <Tree tree={tree}/>}
+            {loading && <img alt='a' src={'images/Dual_Ring-1s-200px-blue.svg'}/>}
+            {!loading && <div className={'answer'} dangerouslySetInnerHTML={createMarkup()}/>}
+        </Flex>
     );
 }
 
-export default inject('api')(SearchResultContent);
+export default inject('api', 'treesStore')(SearchResultContent);

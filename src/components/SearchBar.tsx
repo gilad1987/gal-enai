@@ -1,9 +1,16 @@
 import React, {SyntheticEvent} from 'react';
 import {TextField} from "@material-ui/core";
+import styled from "styled-components";
 
 interface State {
     query: string;
 }
+
+const FormStyled= styled.form`
+    position: sticky;
+    top: 0;
+    background: white;
+`;
 
 export default function SearchBar({onSubmit}:any): React.ReactElement<any, string | React.JSXElementConstructor<any>> | null {
 
@@ -16,7 +23,7 @@ export default function SearchBar({onSubmit}:any): React.ReactElement<any, strin
     };
 
     return (
-        <form onSubmit={(event:SyntheticEvent)=>{
+        <FormStyled onSubmit={(event:SyntheticEvent)=>{
             onSubmit(values.query);
             event.preventDefault();
             return false;
@@ -30,7 +37,7 @@ export default function SearchBar({onSubmit}:any): React.ReactElement<any, strin
                 variant="outlined"
                 fullWidth
             />
-        </form>
+        </FormStyled>
     );
 }
 
