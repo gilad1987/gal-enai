@@ -13,6 +13,7 @@ ul{
 padding-left: 20px;
 }
 .current{color: #fb1c35; font-weight: bold}
+
 `;
 
 
@@ -33,7 +34,10 @@ function SearchResultContent({id, api, treesStore}: any) {
     }
 
     return (
-        <Flex>
+        <Flex style={{
+            'maxWidth': 1400,
+            margin: '0 auto'
+        }}>
             {tree && <Tree tree={tree}/>}
             {loading && <img alt='a' src={'images/Dual_Ring-1s-200px-blue.svg'}/>}
             {!loading && <div className={'answer'} dangerouslySetInnerHTML={createMarkup()}/>}

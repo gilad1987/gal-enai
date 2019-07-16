@@ -89,12 +89,17 @@ function SearchResult({item, query}: any): React.ReactElement<any, string | Reac
                 onClose={handleClose}
                 aria-labelledby="responsive-dialog-title"
             >
-                <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+                <DialogTitle id="customized-dialog-title"
+                             onClose={handleClose}>
                     {item.doc_id}
                 </DialogTitle>
 
-                <DialogContent style={{'maxWidth': 1400, margin: '0 auto'}}>
-                    <SearchResultContent id={item.hashId}/>
+                <DialogContent style={{
+                    borderTop: '1px solid rgba(0, 0, 0, 0.12)',
+                    borderBottom: '1px solid rgba(0, 0, 0, 0.12)'
+                }}>
+                    <SearchResultContent
+                        id={item.hashId}/>
                 </DialogContent>
             </Dialog>
         </>

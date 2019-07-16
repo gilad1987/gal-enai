@@ -26,6 +26,13 @@ h3{
 margin-bottom: 3px;
 font-size: 17px;
 }
+.title{
+    position: sticky;
+    top: 79px;
+    background: white;
+    padding-bottom: 12px;
+    z-index: 500;
+}
 `;
 
 export default function SearchResults({items,query,title}: any): React.ReactElement<any, string | React.JSXElementConstructor<any>> | null {

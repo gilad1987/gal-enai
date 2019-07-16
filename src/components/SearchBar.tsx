@@ -10,6 +10,7 @@ const FormStyled= styled.form`
     position: sticky;
     top: 0;
     background: white;
+        z-index: 999;
 `;
 
 export default function SearchBar({onSubmit}:any): React.ReactElement<any, string | React.JSXElementConstructor<any>> | null {
